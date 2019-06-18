@@ -71,9 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				1F6F509222B7ECAE00B4AAB7 /* Helper.swift */,
-				1F6F507622B7D6FA00B4AAB7 /* AppDelegate.swift */,
-				1F6F509A22B9228100B4AAB7 /* ImageCollectionViewCell.swift */,
-				1F6F509722B9222F00B4AAB7 /* CollectionViewDataProvider.swift */,
+				1F6F509C22B933EC00B4AAB7 /* Presenters */,
 				1F6F509422B8DDDF00B4AAB7 /* Views */,
 				1F6F509522B8DDF100B4AAB7 /* Coordinators */,
 				1F6F507D22B7D6FB00B4AAB7 /* Assets.xcassets */,
@@ -86,6 +84,7 @@
 		1F6F509422B8DDDF00B4AAB7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1F6F509A22B9228100B4AAB7 /* ImageCollectionViewCell.swift */,
 				1F6F507822B7D6FA00B4AAB7 /* StartViewController.swift */,
 				1F6F507A22B7D6FA00B4AAB7 /* Main.storyboard */,
 				1F6F508822B7D7A900B4AAB7 /* ResultFotoViewController.swift */,
@@ -102,6 +101,15 @@
 				1F6F509022B7EC4B00B4AAB7 /* MainCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		1F6F509C22B933EC00B4AAB7 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				1F6F507622B7D6FA00B4AAB7 /* AppDelegate.swift */,
+				1F6F509722B9222F00B4AAB7 /* CollectionViewDataProvider.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
