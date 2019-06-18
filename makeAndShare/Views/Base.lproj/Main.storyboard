@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" id="BYZ-38-t0r" customClass="StartViewController" customModule="makeAndShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2m-Dp-y2e">
+                                <rect key="frame" x="100" y="194" width="214" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O4p-p0-McE"/>
+                                </constraints>
+                                <state key="normal" title="makeFoto"/>
+                                <connections>
+                                    <action selector="makeFoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRC-bW-fM9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNs-66-p4K">
+                                <rect key="frame" x="100" y="244" width="214" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dj3-hq-8er"/>
+                                </constraints>
+                                <state key="normal" title="ShareFoto"/>
+                                <connections>
+                                    <action selector="shareFoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOR-jY-iuQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j2m-Dp-y2e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="EOD-Mp-2sX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mNs-66-p4K" secondAttribute="trailing" constant="100" id="Nlk-Q9-rWT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j2m-Dp-y2e" secondAttribute="trailing" constant="100" id="QkV-fe-nmO"/>
+                            <constraint firstItem="mNs-66-p4K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="VLL-FP-zyP"/>
+                            <constraint firstItem="mNs-66-p4K" firstAttribute="top" secondItem="j2m-Dp-y2e" secondAttribute="bottom" constant="20" id="d1g-BX-8vs"/>
+                            <constraint firstItem="j2m-Dp-y2e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="dt3-EJ-d94"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133" y="-339"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="zMM-4B-BFu">
+            <objects>
+                <viewController storyboardIdentifier="PhotoViewController" id="sw3-On-3cm" customClass="PhotoViewController" customModule="makeAndShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OH0-vX-GpI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvc-Rb-W8B">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <state key="normal" title="SelfIt"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="sw3-On-3cm" eventType="touchUpInside" id="k7D-1F-o9B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xvc-Rb-W8B" secondAttribute="bottom" id="D0L-8q-8QS"/>
+                            <constraint firstItem="xvc-Rb-W8B" firstAttribute="trailing" secondItem="4wq-3U-MeX" secondAttribute="trailing" id="FOM-RA-RTl"/>
+                            <constraint firstItem="xvc-Rb-W8B" firstAttribute="leading" secondItem="4wq-3U-MeX" secondAttribute="leading" id="HgR-91-taC"/>
+                            <constraint firstItem="xvc-Rb-W8B" firstAttribute="top" secondItem="4wq-3U-MeX" secondAttribute="top" id="yQM-rJ-OD9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4wq-3U-MeX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3d-Ig-l9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.75362318840587" y="-317.41071428571428"/>
+        </scene>
+        <!--Result Foto View Controller-->
+        <scene sceneID="L5u-hE-Jrt">
+            <objects>
+                <viewController storyboardIdentifier="ResultFotoViewController" id="miE-Jy-rZB" customClass="ResultFotoViewController" customModule="makeAndShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j2s-2i-d1m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1B6-Mi-hxd">
+                                <rect key="frame" x="20" y="64" width="374" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="LZA-aF-t1n"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-DY-qtH">
+                                <rect key="frame" x="20" y="434" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4F8-ox-J4z"/>
+                                </constraints>
+                                <state key="normal" title="Save "/>
+                                <connections>
+                                    <action selector="save2gallery:" destination="miE-Jy-rZB" eventType="touchUpInside" id="Aru-TF-D4P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xK-1j-i56">
+                                <rect key="frame" x="20" y="484" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="7kA-O4-VUA"/>
+                                    <constraint firstAttribute="height" constant="30" id="zLJ-sO-mFn"/>
+                                </constraints>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="save2gallery:" destination="miE-Jy-rZB" eventType="touchUpInside" id="FvH-rR-dKJ"/>
+                                    <action selector="shareFoto:" destination="miE-Jy-rZB" eventType="touchUpInside" id="9Kn-Ad-9rX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Ch-DY-qtH" firstAttribute="leading" secondItem="u5E-X2-PVZ" secondAttribute="leading" constant="20" id="4uk-a8-Oyv"/>
+                            <constraint firstItem="1B6-Mi-hxd" firstAttribute="top" secondItem="u5E-X2-PVZ" secondAttribute="top" constant="20" id="7Vl-hI-jgA"/>
+                            <constraint firstItem="1B6-Mi-hxd" firstAttribute="leading" secondItem="u5E-X2-PVZ" secondAttribute="leading" constant="20" id="VhX-tv-Q8h"/>
+                            <constraint firstItem="u5E-X2-PVZ" firstAttribute="trailing" secondItem="2Ch-DY-qtH" secondAttribute="trailing" constant="20" id="Wo5-67-J60"/>
+                            <constraint firstItem="0xK-1j-i56" firstAttribute="leading" secondItem="u5E-X2-PVZ" secondAttribute="leading" constant="20" id="XEx-Zr-wXv"/>
+                            <constraint firstItem="u5E-X2-PVZ" firstAttribute="trailing" secondItem="0xK-1j-i56" secondAttribute="trailing" constant="20" id="bcR-sd-OYU"/>
+                            <constraint firstItem="2Ch-DY-qtH" firstAttribute="top" secondItem="1B6-Mi-hxd" secondAttribute="bottom" constant="20" id="ex5-Kb-nMu"/>
+                            <constraint firstItem="u5E-X2-PVZ" firstAttribute="trailing" secondItem="1B6-Mi-hxd" secondAttribute="trailing" constant="20" id="fgX-q9-Lx5"/>
+                            <constraint firstItem="0xK-1j-i56" firstAttribute="top" secondItem="2Ch-DY-qtH" secondAttribute="bottom" constant="20" id="lWY-Zb-Fn2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u5E-X2-PVZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="1B6-Mi-hxd" id="Hc0-f8-zCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TfY-2k-Kv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1413" y="-317"/>
+        </scene>
+    </scenes>
+</document>
